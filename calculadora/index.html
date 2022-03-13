@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Emiliano Susmano | Calcular Area</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="src/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="src/css/mdi.css" type="text/css" />
+  <link rel="stylesheet" href="src/css/styles.css" type="text/css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Emiliano Susmano | Sitio para calcular Áreas</h1>
+  </header>
+
+  <article class="container main-content">
+    <section>
+      <h2>Calcular área del círculo</h2>
+      <form id="formulario-circulo" class="row g-3" novalidate>
+        <div>
+          <p>Para calcular el área del círculo la fórmula es pi ∗ radio<sup>2</sup></p>
+          <p>Vamos a realizar este cálculo y mostrar el resultado en pantalla! Ingresá el radio del círculo del que
+            quieres calcular el área</p>
+          <input type="number" class="form-control" id="radio" placeholder="Radio" />
+        </div>
+        <div>
+          <button type="submit" class="btn btn-success mb-3">
+            Calcular
+          </button>
+        </div>
+      </form>
+      <div id="resultado-circulo"></div>
+    </section>
+    <hr>
+    <section>
+      <h2>Calcular área del rectángulo</h2>
+      <form id="formulario-rectangulo" class="row g-3" novalidate>
+        <div>
+          <p>Para calcular el área del rectángulo la fórmula es base ∗ altura</p>
+          <p>Vamos a realizar este cálculo y mostrar el resultado en pantalla! Ingresá el valor de base y altura del
+            rectángulo del que quieres calcular el área</p>
+          <input type="number" class="form-control" id="base" placeholder="Base" />
+          <input type="number" class="form-control" id="altura" placeholder="Altura" />
+        </div>
+        <div>
+          <button type="submit" class="btn btn-success mb-3">
+            Calcular
+          </button>
+        </div>
+      </form>
+      <div id="resultado-rectangulo"></div>
+    </section>
+
+    <section>
+      <p>Contador de ejecuciones: <span id="seccion-contador">0</span></p>
+    </section>
+  </article>
+
+  <footer id="contacto" class="row footer">
+    <div class="contacto">
+      <a class="contacto-item" href="https://www.linkedin.com/in/emilianosusmano/" target="_blank"><span
+          class="mdi mdi-linkedin mdi-24px"></span> Linkedin</a>
+      <a class="contacto-item" href="mailto:emilianosusmano@gmail.com" target="_blank"><span
+          class="mdi mdi-email mdi-24px"></span> Correo electrónico</a>
+      <a class="contacto-item" href="https://www.instagram.com/emisusmano/" target="_blank"><span
+          class="mdi mdi-instagram mdi-24px"></span> Instagram</a>
+    </div>
+    <span>Emiliano Susmano</span>
+  </footer>
+
+  <script src="src/js/bootstrap.js"></script>
+  <script src="src/js/scripts.js"></script>
+</body>
+
+</html>

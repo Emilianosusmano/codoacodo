@@ -1,0 +1,143 @@
+html {
+  display: flex;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f4fbff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #96b9ce;
+  border-radius: 25px;
+  border: 2px solid #f4fbff;
+}
+
+section {
+  padding: 3%;
+}
+
+.header {
+  margin: 0;
+  text-align: center;
+  background-image: url("../img/wallpaper.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+  padding: 3%;
+}
+
+.header .profile-img {
+  border-radius: 50%;
+}
+
+.header .profile-title {
+  margin-top: 1rem;
+  color: rgb(236, 255, 255);
+}
+
+.profile-nav-button {
+  width: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+.offcanvas-body .nav-items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.offcanvas-body .nav-items .nav-list-item {
+  margin-top: 20px;
+}
+
+.offcanvas-body .nav-items .nav-list-item .nav-item {
+  text-decoration: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 3%;
+}
+
+.main-content .subtitulo-section {
+  color: #1f475e;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 3%;
+}
+
+.tools-list .card {
+  margin: 5px;
+  width: 15rem;
+}
+
+.tools-list .card .card-body {
+  display: flex;
+  flex-direction: column;
+  vertical-align: auto;
+}
+
+.tools-list .card .card-body .card-title {
+  font-size: 21px;
+  color: #1f475e;
+}
+
+.footer {
+  margin: 0;
+  width: 100%;
+  height: 30vh;
+  padding: 3%;
+  background-color: #123041;
+  color: #d0e9f7;
+  text-align: center;
+  align-items: center;
+}
+
+.footer .contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .contacto {
+    flex-direction: column;
+  }
+}
+
+.footer .contacto .contacto-item {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  color: #d0e9f7;
+}
+
+.footer .contacto .contacto-item:hover {
+  color: #8cafc4;
+}

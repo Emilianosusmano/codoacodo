@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Emiliano Susmano | Perfil</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="src/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="src/css/mdi.css" type="text/css" />
+    <link rel="stylesheet" href="src/css/styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <header id="top" class="row header">
+      <button
+        class="btn btn-outline-light btn-sm profile-nav-button"
+        type="button"
+        onclick="toggleOffcanvas()"
+      >
+        Navegación
+      </button>
+      <a href="#"
+        ><img
+          class="img-fluid profile-img"
+          src="src/img/profile-img.jpg"
+          alt="Imagen de perfil"
+      /></a>
+      <h1 class="profile-title">Emiliano Susmano | Perfil</h1>
+    </header>
+
+    <nav>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header">
+          <h2 id="offcanvasRightLabel" style="color: #1f475e">Navegación</h2>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav-items">
+            <li class="nav-list-item">
+              <a class="nav-item" onclick="scrollItem('top')">Top</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item" onclick="scrollItem('info-personal')"
+                >Información Personal</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item" onclick="scrollItem('objetivos')"
+                >Objetivos</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item" onclick="scrollItem('experiencia')"
+                >Experiencia Laboral</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item" onclick="scrollItem('herramientas')"
+                >Herramientas y tecnologías que manejo</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item" onclick="scrollItem('contacto')">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <article class="container main-content">
+      <section id="info-personal">
+        <h2 class="subtitulo-section">Información Personal</h2>
+        <p>
+          Mi nombre es Emiliano Susmano, tengo 32 años y soy estudiante de
+          Ingeniería en Sistemas en la Universidad CAECE. Actualmente me restan
+          6 materias para terminar la carrera, por lo que planeo recibirme a
+          finales del 2022.
+        </p>
+        <p>
+          Antes de ingresar al mundo IT, trabajé como auxiliar de farmacia en el
+          Hospital Aeronpautico Central en una modalidad part-time, lo que me
+          dió la posibilidad de avanzar con mi carrera.
+        </p>
+        <p>
+          Soy autodidacta con un nivel de ingles básico, me entusiasma aprender
+          y seguir creciendo en este rubro.
+        </p>
+      </section>
+      <section id="objetivos">
+        <h2 class="subtitulo-section">Objetivos</h2>
+        <p>
+          Mi objetivo es aprender y crecer tanto en el rol de desarrollador como
+          en la administración y gestión de proyectos, para así poder dar
+          soluciones completas a problemas complejos, llevando adelante un
+          equipo y promoviendo el crecimiento del mismo.
+        </p>
+        <p>
+          Como metas para este año 2022, me propuse terminar la carrera,
+          realizar cursos de programacion e incrementar mi nivel de ingles.
+        </p>
+      </section>
+      <section id="experiencia">
+        <h2 class="subtitulo-section">Experiencia Laboral</h2>
+        <p>
+          Comencé en el mundo de la programacion a mediadios del 2018, en donde
+          trabajaba para la farmacia de internación del Hospital Aeronáutico
+          Central y surgió una actualizacion en el Sistema de Gestion
+          Hospitalario, en donde pude empezar a ver codigo productivo en C# y
+          manejo de BBDD.
+        </p>
+        <p>
+          A finales de 2019 cambié de trabajo y me incorporé al equipo de
+          desarrollo de una consultora que tenía contrato con el Banco BBVA, en
+          donde pude desenvolverme como programador Java Backend
+        </p>
+        <p>
+          En Octubre de 2020 me abosorvió el Banco BBVA, por lo que pasé a
+          formar parte del equipo como Analista de Sistemas y perfilandome como
+          desarrollador Fullstack. Actualmente estoy ocupando este rol y
+          mejorando mis capacidades.
+        </p>
+      </section>
+      <section id="herramientas">
+        <h2 class="subtitulo-section">Herramientas y tecnologías que manejo</h2>
+        <div class="container tools-list">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-account mdi-48px"></span> Scrum
+              </h5>
+              <p class="card-text">
+                Conocimientos en la metodología ágil de Scrum
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-jira mdi-48px"></span> Jira
+              </h5>
+              <p class="card-text">
+                Gestión de tiempos y proyectos mediante la herramienta Jira
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-git mdi-48px"></span> Git
+              </h5>
+              <p class="card-text">Manejo de versionado con GitBash</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-bitbucket mdi-48px"></span> Bitbucket
+              </h5>
+              <p class="card-text">Gestión de ramas integradoras</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-restore mdi-48px"></span> Jenkins
+              </h5>
+              <p class="card-text">
+                Pasajes a producción mediante integración continua
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-language-java mdi-48px"></span> Spring
+                Framework
+              </h5>
+              <p class="card-text">
+                Desarrollo Backend en Java mediante el conocido Framework Spring
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-angularjs mdi-48px"></span> AngularJS
+              </h5>
+              <p class="card-text">
+                Desarrollo Frontend utilizando el framework AngularJS
+                (Conocimientos básicos)
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-react mdi-48px"></span> ReactJS
+              </h5>
+              <p class="card-text">
+                Desarrollo Frontend utilizando la libreria ReactJS
+                (Conocimientos básicos)
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-database-outline mdi-48px"></span> SQL
+              </h5>
+              <p class="card-text">
+                Conocimientos en bases de datos y sentencias SQL
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="mdi mdi-linux mdi-48px"></span> Unix
+              </h5>
+              <p class="card-text">
+                Revisión de logs en servidores mediante comandos Unix
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer id="contacto" class="row footer">
+      <div class="contacto">
+        <a
+          class="contacto-item"
+          href="https://www.linkedin.com/in/emilianosusmano/"
+          target="_blank"
+          ><span class="mdi mdi-linkedin mdi-24px"></span> Linkedin</a
+        >
+        <a
+          class="contacto-item"
+          href="mailto:emilianosusmano@gmail.com"
+          target="_blank"
+          ><span class="mdi mdi-email mdi-24px"></span> Correo electrónico</a
+        >
+        <a
+          class="contacto-item"
+          href="https://www.instagram.com/emisusmano/"
+          target="_blank"
+          ><span class="mdi mdi-instagram mdi-24px"></span> Instagram</a
+        >
+      </div>
+      <span>Emiliano Susmano</span>
+    </footer>
+
+    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/scripts.js"></script>
+  </body>
+</html>

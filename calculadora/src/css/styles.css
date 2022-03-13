@@ -1,0 +1,100 @@
+html {
+  display: flex;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f4fbff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #96b9ce;
+  border-radius: 25px;
+  border: 2px solid #f4fbff;
+}
+
+section {
+  padding: 3%;
+}
+
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-image: url("../img/wallpaper.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+  padding: 3%;
+  color: rgb(246, 252, 252);
+}
+
+.main-content {
+  padding: 3%;
+}
+
+.main-content .subtitulo-section {
+  color: #1f475e;
+}
+
+.footer {
+  margin: 0;
+  width: 100%;
+  height: 30vh;
+  padding: 3%;
+  background-color: #123041;
+  color: #d0e9f7;
+  text-align: center;
+  align-items: center;
+}
+
+.footer .contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .contacto {
+    flex-direction: column;
+  }
+}
+
+.footer .contacto .contacto-item {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  color: #d0e9f7;
+}
+
+.footer .contacto .contacto-item:hover {
+  color: #8cafc4;
+}
+
+.form-control {
+  width: 40%;
+  margin: 5px;
+}
+
+.alert {
+  width: auto;
+}
