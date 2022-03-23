@@ -30,6 +30,7 @@ section {
 .header {
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center; 
   align-items: center;
   background-image: url("../img/wallpaper.jpg");
@@ -48,10 +49,13 @@ section {
   padding: 3%;
 }
 
-.main-content .nav .nav-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.main-content .subtitulo-section {
+  color: #1f475e;
+}
+
+.main-content .text-decoration-links {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer {
