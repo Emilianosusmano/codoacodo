@@ -48,8 +48,10 @@ section {
   padding: 3%;
 }
 
-.main-content .subtitulo-section {
-  color: #1f475e;
+.main-content .nav .nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .footer {
