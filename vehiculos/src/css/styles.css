@@ -1,0 +1,164 @@
+html {
+  display: flex;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f4fbff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #96b9ce;
+  border-radius: 25px;
+  border: 2px solid #f4fbff;
+}
+
+section {
+  padding: 3%;
+}
+
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/wallpaper.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+  padding: 3%;
+  color: rgb(246, 227, 255);
+}
+
+.main-content {
+  padding: 3%;
+}
+
+.main-content .subtitulo-section {
+  color: #212529;
+}
+
+.main-content .input-item {
+  margin: 10px;
+}
+
+.seccion-crear {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-content .imagenes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.img-vehiculo {
+  width: 180px;
+}
+
+li {
+  list-style: none;
+}
+
+#form-vehiculo {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-option {
+  color: #fff;
+  background-color: #212529;
+  box-shadow: 0 0 0 0.1rem rgba(1, 40, 75, 0.5);
+  text-align: left;
+}
+
+.boton-submit {
+  max-width: fit-content;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.card-vehiculo {
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #212529;
+  border-radius: 10px;
+}
+
+.botoneraTesting {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-test {
+  margin: 5px;
+  max-width: 300px;
+}
+
+.footer {
+  margin: 0;
+  margin-top: auto;
+  width: 100%;
+  height: 30vh;
+  padding: 3%;
+  background-color: #123041;
+  color: #d0e9f7;
+  text-align: center;
+  align-items: center;
+}
+
+.footer .contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .contacto {
+    flex-direction: column;
+  }
+
+  .img-vehiculo {
+    width: 100px;
+  }
+}
+
+.footer .contacto .contacto-item {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  color: #d0e9f7;
+}
+
+.footer .contacto .contacto-item:hover {
+  color: #8cafc4;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Argenta S.A.</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="src/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="src/css/mdi.css" type="text/css" />
+    <link rel="stylesheet" href="src/css/styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Argenta S.A.</h1>
+    </header>
+
+    <article class="container main-content">
+      <section id="acciones">
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          onclick="crearVehiculo()"
+        >
+          Crear vehiculos
+        </button>
+        <button
+          id="boton-listar-vehiculos"
+          type="button"
+          class="btn btn-outline-secondary"
+          onclick="listarVehiculos()"
+        >
+          Listar vehiculos
+        </button>
+      </section>
+
+      <section id="seccion-listado"></section>
+
+      <section id="seccion-crear" class="seccion-crear">
+        <form id="form-vehiculo" novalidate class="col-md-6 col-sm-6 col-lg-6">
+          <div class="row input-item">
+            <label for="selected-option-ruedas">Cantidad de Ruedas</label>
+            <select
+              id="selected-option-ruedas"
+              class="select-option"
+              name="select"
+            >
+              <option class="select-option" value="">Seleccione</option>
+              <option class="select-option" value="1">1</option>
+              <option class="select-option" value="2">2</option>
+              <option class="select-option" value="3">3</option>
+              <option class="select-option" value="4">4</option>
+            </select>
+          </div>
+
+          <div class="row input-item">
+            <label for="selected-option-puertas">Cantidad de Puertas</label>
+            <select
+              id="selected-option-puertas"
+              class="select-option"
+              name="select"
+            >
+              <option class="select-option" value="">Seleccione</option>
+              <option class="select-option" value="0">0</option>
+              <option class="select-option" value="1">1</option>
+              <option class="select-option" value="2">2</option>
+              <option class="select-option" value="3">3</option>
+              <option class="select-option" value="4">4</option>
+              <option class="select-option" value="5">5</option>
+            </select>
+          </div>
+
+          <div class="row input-item">
+            <label for="selected-option-carroceria">Tipo carroceria</label>
+            <select
+              id="selected-option-carroceria"
+              class="select-option"
+              name="select"
+            >
+              <option class="select-option" value="">Seleccione</option>
+              <option class="select-option" value="Chica">Chica</option>
+              <option class="select-option" value="Mediana">Mediana</option>
+              <option class="select-option" value="Grande">Grande</option>
+            </select>
+          </div>
+
+          <div class="row input-item">
+            <label for="selected-option-modelo">Modelo</label>
+            <select
+              id="selected-option-modelo"
+              class="select-option"
+              name="select"
+            >
+              <option class="select-option" value="">Seleccione</option>
+              <option class="select-option" value="Moto">Moto</option>
+              <option class="select-option" value="Auto">Auto</option>
+              <option class="select-option" value="Camioneta">Camioneta</option>
+            </select>
+          </div>
+
+          <div class="row input-item">
+            <label for="selected-option-marca">Marca</label>
+            <select
+              id="selected-option-marca"
+              class="select-option
+              "
+              name="select"
+            >
+              <option class="select-option" value="">Seleccione</option>
+              <option class="select-option" value="Ford">Ford</option>
+              <option class="select-option" value="Fiat">Fiat</option>
+              <option class="select-option" value="BMW">BMW</option>
+              <option class="select-option" value="Audi">Audi</option>
+            </select>
+          </div>
+
+          <div class="row input-item">
+            <span
+              >Alta gama <input id="checkbox-altagama" type="checkbox"
+            /></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary boton-submit">
+            Mostrar presupuesto
+          </button>
+          <section class="row" id="presupuesto"></section>
+        </form>
+
+        <div class="imagenes row"  class="col-md-6">
+          <img class="img-vehiculo" src="src/img/audi-14.svg" alt="Audi">
+          <img class="img-vehiculo" src="src/img/bmw.jpg" alt="BMW">
+          <img class="img-vehiculo" src="src/img/fiat.jpg" alt="Fiat">
+          <img class="img-vehiculo" src="src/img/ford.png" alt="Ford">
+        </div>
+      </section>
+    </article>
+
+    <footer id="contacto" class="row footer">
+      <div class="contacto">
+        <a
+          class="contacto-item"
+          href="https://www.linkedin.com/in/emilianosusmano/"
+          target="_blank"
+          ><span class="mdi mdi-linkedin mdi-24px"></span> Linkedin</a
+        >
+        <a
+          class="contacto-item"
+          href="mailto:emilianosusmano@gmail.com"
+          target="_blank"
+          ><span class="mdi mdi-email mdi-24px"></span> Correo electrónico</a
+        >
+        <a
+          class="contacto-item"
+          href="https://www.instagram.com/emisusmano/"
+          target="_blank"
+          ><span class="mdi mdi-instagram mdi-24px"></span> Instagram</a
+        >
+      </div>
+      <span>Emiliano Susmano</span>
+    </footer>
+
+    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/scripts.js"></script>
+  </body>
+</html>
